@@ -33,7 +33,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
     <script>
-        var map = L.map('map').setView([44.0165, 21.0059], 7); // Centar Srbije
+        var map = L.map('map').setView([0, 0], 3);
+        map.attributionControl.setPrefix(false);
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; OpenStreetMap &copy; CARTO',
@@ -123,4 +124,5 @@
         }
     </script>
 </body>
+
 </html>
